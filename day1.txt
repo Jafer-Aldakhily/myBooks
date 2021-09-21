@@ -1,0 +1,147 @@
+what is react ? 
+React is an open source javascript 
+front end library.
+react support jsx(domain spacific language)
+
+how intall or create react app using npm ? 
+npx create-react-app appName => basiclly run this command
+
+when you using react you should be known some files it is very important
+in react I called it by react life cycle for project:
+index.html => which inside public folder which will by appeare for users.
+
+app.js => located inside src folder contain most react code like components and functions and so on.
+
+index.js  => located inside src folder which transfer react code which writen on 
+app.js to appeare on index.html.
+
+react have tow types of components ?
+1 statless component (needs functions to use it refers to functional component).
+
+2 statfull component (refers for class component)
+
+expamles :
+
+ex1
+index.js
+ReactDom.render("Hello World" , document.getElementById('root'));
+
+ex2
+index.js
+const / let message = "Hello World";
+ReactDom.render(message , document.getElementById);
+
+ex3
+index.js
+ReactDom.render(<h1>Hello World</h1> , null , document.getElementById('root'));
+
+ex4
+index.js
+const component = <h1><p>Welcome Every Body!</p></h1>;
+ReactDom.render(component , null , document.getelementById('root'));
+
+ex5
+index.js
+function Component()
+{
+return <h1><p>Welcome Every Body!</p></h1>;
+}
+
+ReactDom.render(Component() , document.getElementById('root'));
+
+
+ex6
+app.js
+function app()
+{
+return <h1><p>Welcome Every Body!</p></h1>;
+}
+
+export default app;
+
+
+index.js
+import App from './App'
+ReactDom.render(<App /> , document.getElementById('root'));
+
+ex6 => using statless component without arrow function.
+
+
+ex7
+app.js
+const app = () =>{
+return <h1><p>Welcome Every Body!</p></h1>;
+}
+
+export default app;
+
+
+index.js
+import App from './App'
+ReactDom.render(<App /> , document.getElementById('root'));
+
+ex7 => using statless component with arrow function.
+
+
+ex8 
+app.js
+class App extends React.Component{
+render(){
+return <h1><p>Welcome Every Body</p></h1>;
+}
+}
+
+export default App;
+
+
+index.js
+import App from './App'
+ReactDom.render(<App /> , document.getElementById('root'));
+
+ex8 => using statfull component.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
